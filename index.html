@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaiann Lima - Desenvolvedor</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"> 
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+	<div class="theme-switcher">
+    <input type="checkbox" id="theme-toggle">
+    <label for="theme-toggle" class="toggle-label">
+      <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+      <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home" class="nav-link active">Início</a></li>
+        <li><a href="#projects" class="nav-link">Projetos</a></li>
+        <li><a href="#skills" class="nav-link">Tecnologias</a></li>
+        <li><a href="#about" class="nav-link">Sobre Mim</a></li>
+        <li><a href="#contact" class="nav-link">Contatos</a></li>
+      </ul>
+    </nav>
+
+    <button class="mobile-nav-toggle" aria-expanded="false">
+      <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+      </svg>
+      <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+
+  </header>
+
+  <main>
+
+    <section id="home">
+      <div class="container">
+        <div class="home-text">
+          <h3 class="greeting">Olá! Eu sou Kaiann Lima</h3>
+          <h1 class="title">Um novo desenvolvedor com a disciplina e a maturidade de um profissional de TI</h1>
+        </div>
+        
+        <div class="home-image">
+          <img src="images/kaiann.jpg" alt="um desenho meu - Kaiann programando">
+        </div>
+      </div>
+
+      <a href="#projects" class="scroll-arrow down" aria-label="Rolar para a próxima seção">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </a>
+    </section>
+
+    <section id="projects">
+      <a href="#home" class="scroll-arrow up" aria-label="Rolar para a seção anterior">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </a>
+
+      <div class="container">
+        <h2 class="section-title">Projetos</h2>
+        
+        <div class="projects-grid">
+          
+          <div class="project-card">
+            <h3>O Planejamento de Recursos Empresariais (ERP)</h3>
+            <p>Sistema de administração de finanças, responsável por filtrar os gastos do usuário.</p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <a href="https://github.com/KaiannLima/ERP" target="_blank" class="project-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+              Ver no GitHub
+            </a>
+          </div>
+
+          <div class="project-card">
+            <h3>Sistema de Biblioteca</h3>
+            <p>Controle de dados desenvolvido para o gerenciamento de usuários, livros, aluguel e devolução. Um desafio para o treinamento de classes, métodos e estrutura de orientação a objetos.</p>
+            <div class="project-tags">
+              <span>JAVA</span>
+            </div>
+            <a href="https://github.com/KaiannLima/Biblioteca-JAVA" target="_blank" class="project-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+              Ver no GitHub
+            </a>
+          </div>
+
+          <div class="project-card">
+            <h3>Jogo de Obstáculos</h3>
+            <p>Este projeto foca no aprendizado da Godot. Optei por uma temática e mecânicas simples para me concentrar em dominar os recursos e o fluxo de trabalho da engine. Algumas implementações ainda serão feitas"</p>
+            <div class="project-tags">
+              <span>GDScript</span>
+            </div>
+            <a href="https://github.com/KaiannLima/game-Godot" target="_blank" class="project-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+              Ver no GitHub
+            </a>
+          </div>
+
+          <div class="project-card">
+            <h3>RPG D&D</h3>
+            <p>Projeto de RPG D&D para a disciplina de Desenvolvimento para Plataformas Móveis. O projeto consiste em um aplicativo que auxilia o mestre de RPG a gerar as fichas dos jogadores.</p>
+            <div class="project-tags">
+              <span>JAVA</span>
+            </div>
+            <a href="https://github.com/KaiannLima/game-Godot" target="_blank" class="project-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+              Ver no GitHub
+            </a>
+          </div>
+
+        </div> </div>
+
+      <a href="#skills" class="scroll-arrow down" aria-label="Rolar para a próxima seção">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </a>
+    </section>
+
+    <section id="skills">
+      <a href="#projects" class="scroll-arrow up" aria-label="Rolar para a seção anterior">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </a>
+
+      <div class="container">
+        <h2 class="section-title">Tecnologias</h2>
+        
+        <div class="skills-grid">
+          
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+            <span>HTML</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+            <span>CSS</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" alt="jQuery" />
+            <span>jQuery</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
+            <span>React</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Native" />
+            <span>React Native</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+            <span>Java</span>
+          </div>
+					<div class="skill-item">
+  					<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" alt="Ruby" />
+  					<span>Ruby</span>
+					</div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" />
+            <span>PostgreSQL</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+            <span>Git</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+            <span>GitHub</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" />
+            <span>Linux</span>
+          </div>
+
+        </div> </div>
+
+      <a href="#about" class="scroll-arrow down" aria-label="Rolar para a próxima seção">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </a>
+    </section>
+
+    <section id="about">
+      <a href="#skills" class="scroll-arrow up" aria-label="Rolar para a seção anterior">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </a>
+
+      <div class="container">
+        <h2 class="section-title">Sobre Mim</h2>
+        
+        <div class="about-content">
+          <h3>Maturidade, Foco e um Novo Começo</h3>
+          <p>
+            Minha jornada na tecnologia começou pela curiosidade de criar. De forma autodidata, mergulhei nos estudos de programação, construí minhas primeiras páginas web do zero e logo conquistei um projeto freelance de seis meses, onde entreguei tudo o que foi exigido e fui além.
+          </p>
+          <p>
+            Com essa bagagem, ingressei na faculdade de Ciências da Computação e em um estágio na área de TI. Embora meu foco inicial fosse o desenvolvimento, minha carreira decolou em um ramo operacional da tecnologia. Decidi abraçar o desafio: enquanto a oportunidade de programar não surgia, eu seria o melhor profissional possível onde estava.
+          </p>
+          <p>
+            Fui efetivado, assumi crescentes responsabilidades e me destaquei, o que exigiu dedicação integral e uma pausa temporária nos estudos. Essa "estrada alternativa" não foi um desvio, foi um campo de treinamento. Ela me trouxe uma enorme maturidade profissional, resiliência e uma visão de negócios que eu jamais teria adquirido de outra forma.
+          </p>
+          <p>
+            Contudo, a paixão inicial pela programação nunca desapareceu. Após consolidar essa carreira, percebi que era hora de voltar ao meu objetivo original.
+          </p>
+          <p>
+            Hoje, muito mais maduro, estou retornando à faculdade - agora em Análise e Desenvolvimento de Sistemas pela UNIFOR - e busco a oportunidade de estágio que me permitirá unir tudo que aprendi. Estou pronto para aplicar a disciplina e a responsabilidade que lapidei em um novo desafio: o de me tornar um excelente desenvolvedor.
+          </p>
+        </div>
+      </div>
+
+      <a href="#contact" class="scroll-arrow down" aria-label="Rolar para a próxima seção">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </a>
+    </section>
+
+    <section id="contact">
+      <a href="#about" class="scroll-arrow up" aria-label="Rolar para a seção anterior">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </a>
+
+      <div class="container">
+        <h2 class="section-title">Contatos</h2>
+        
+        <div class="contact-links">
+          
+          <div class="contact-item-wrapper">
+            <button class="contact-item copy-btn" id="email-copy-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>kaiannlima@gmail.com</span>
+            </button>
+            <span class="copy-success-msg" id="copy-success-msg"></span>
+          </div>
+
+          <a href="https://github.com/KaiannLima" target="_blank" class="contact-item"> 
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            <span>GitHub</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/kaiann-lima/" target="_blank" class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            <span>LinkedIn</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Desenvolvido por Kaiann Lima.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
