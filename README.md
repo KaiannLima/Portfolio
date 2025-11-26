@@ -28,6 +28,6 @@ Este projeto é um portfólio pessoal desenvolvido como um desafio de front-end.
 
 ## 🚀 Como Acessar
 
-Você pode visualizar o projeto em funcionamento [clicando aqui](https://kaiannlima.github.io/Portfolio/).
+1: Você pode visualizar o projeto em funcionamento [clicando aqui](https://kaiannlima.github.io/Portfolio/).
 
-Para executar localmente, basta clonar o repositório e abrir o arquivo `index.html` no seu navegador.
+2: Para executar localmente, basta clonar o repositório e abrir o arquivo `index.html` no seu navegador.
